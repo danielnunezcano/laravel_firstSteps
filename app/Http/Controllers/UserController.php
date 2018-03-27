@@ -26,11 +26,19 @@ class UserController extends Controller
 //            'users' => $users
 //        ]);
 
-        return view('users', compact('title', 'users'));
+        return view('users.index', compact('title', 'users'));
     }
 
-    public function detail($id)
+    public function show($id)
     {
-        return "Mostrando detalle del usuario: {$id}";
+
+        $title = "Usuario";
+        return view('users.show', compact('id','title'));
+
+    }
+
+    public function create($id)
+    {
+        return "Crear nuevo usuario: {$id}";
     }
 }

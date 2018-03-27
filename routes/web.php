@@ -30,7 +30,7 @@ Route::get('/usuarios', 'UserController@index');
     return view('users',['users' => $users]);
 });*/
 
-Route::get('/usuarios/{id}', 'UserController@detail');
+Route::get('/usuarios/{id}', 'UserController@show');
 
 Route::get('/usuarios/nuevo', function () {
     return "Crear nuevo usuario";
