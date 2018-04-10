@@ -20,6 +20,7 @@ class CreateUsuariosTable extends Migration
             $table->string('direccion',90)->nullable();
             $table->unsignedInteger('cp')->nullable();
             $table->string('email',90)->nullable();
+//            $table->string('rol')->nullable();
             $table->enum('rol',['administrador','comprador'])->nullable();
             $table->string('contrasenya',50)->nullable();
             $table->unsignedInteger('fk_ciudades')->nullable();

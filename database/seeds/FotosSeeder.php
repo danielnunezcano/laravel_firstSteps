@@ -28,6 +28,5 @@ class FotosSeeder extends Seeder
         Foto::create(['fk_libros' => 3,'orden' => 2,'path_foto' => '14.jpg']);
         Foto::create(['fk_libros' => 3,'orden' => 3,'path_foto' => '15.jpg']);
         Foto::create(['fk_libros' => 3,'orden' => 4,'path_foto' => '16.jpg']);
-
     }
 }
