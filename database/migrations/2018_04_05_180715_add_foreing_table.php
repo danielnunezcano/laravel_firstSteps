@@ -13,19 +13,19 @@ class AddForeingTable extends Migration
      */
     public function up()
     {
-//        Schema::table('fotos', function (Blueprint $table) {
-//            $table->foreign('fk_libros')->references('id')->on('libros');
-//        });
-//
-//        Schema::table('libros_autores', function (Blueprint $table) {
-//            $table->foreign('fk_libros')->references('id')->on('libros');
-//            $table->foreign('fk_autores')->references('id')->on('autores');
-//        });
-//
-//        Schema::table('libros_pedidos', function (Blueprint $table) {
-//            $table->foreign('fk_libros')->references('id')->on('libros');
-//            $table->foreign('fk_pedidos')->references('id')->on('pedidos');
-//        });
+        Schema::table('fotos', function (Blueprint $table) {
+            $table->foreign('fk_libros')->references('id')->on('libros');
+        });
+
+        Schema::table('libros_autores', function (Blueprint $table) {
+            $table->foreign('fk_libros')->references('id')->on('libros');
+            $table->foreign('fk_autores')->references('id')->on('autores');
+        });
+
+        Schema::table('libros_pedidos', function (Blueprint $table) {
+            $table->foreign('fk_libros')->references('id')->on('libros');
+            $table->foreign('fk_pedidos')->references('id')->on('pedidos');
+        });
     }
 
     /**

@@ -33,5 +33,17 @@ class AutoresSeeder extends Seeder
         Autore::create([
             'nombre' => 'Lewis Carrol'
         ]);
+        Autore::create([
+            'nombre' => 'María Dueñas'
+        ]);
+        Autore::create([
+            'nombre' => 'Cesar Brandon'
+        ]);
+        Autore::create([
+            'nombre' => 'Laura Escanes'
+        ]);
+        Autore::create([
+            'nombre' => 'Elísabet Benavent'
+        ]);
     }
 }
