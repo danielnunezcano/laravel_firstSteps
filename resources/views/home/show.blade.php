@@ -5,7 +5,7 @@
 
     @forelse ($libros as $libro)
         <div class="bookCelda">
-            <img class="bookImage" src="{{ asset('/books/'.$libro->isbn.'.jpg') }}">
+            <img class="bookImage" src="{{ asset('/images/books/'.$libro->isbn.'.jpg') }}">
             <div class="bookTitle bookInformation">{{ $libro->titulo }}</div>
             <div class="bookAuthor bookInformation">{{ $libro->nombre }}</div>
             <div class="bookPrice bookInformation">{{ $libro->precio }} €</div>
