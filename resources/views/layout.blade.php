@@ -20,7 +20,16 @@
 <body>
 
 <header>
-    <div>UAZON</div>
+    <h1>UAZON</h1>
+    <div class="menu">
+        <ul>
+            <li>Libros</li>
+            <li>Autores</li>
+            <li>Lo más leido</li>
+            <li>Críticas de libros</li>
+            <li>Contacto</li>
+        </ul>
+    </div>
     <div class="col-lg-6">
         <div class="input-group">
 

@@ -5,11 +5,16 @@
 
     @forelse ($libros as $libro)
         <div class="bookCelda">
+            <div class="pricebuble">
+                {{ $libro->precio }} €
+            </div>
             <img class="bookImage" src="{{ asset('/images/books/'.$libro->isbn.'.jpg') }}">
             <div class="bookTitle bookInformation">{{ $libro->titulo }}</div>
             <div class="bookAuthor bookInformation">{{ $libro->nombre }}</div>
-            <div class="bookPrice bookInformation">{{ $libro->precio }} €</div>
+
         </div>
+
+
     @empty
         No hay usuarios registados
     @endforelse

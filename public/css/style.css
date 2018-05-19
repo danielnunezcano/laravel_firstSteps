@@ -40,11 +40,16 @@ code {
     font-size: 80%;
 }
 
+.menu li{
+    display: inline;
+    padding-right: 100px;
+}
+
 .bookCelda {
     padding: 30px 30px;
     float: left;
     /*border: 1px solid black;*/
-    min-height: 400px;
+    /*min-height: 300px;*/
     /*max-width: 138px;*/
 }
 
@@ -66,9 +71,38 @@ code {
     max-width: 138px;
 }
 
-.bookPrice{
-    color: orange;
-    font-style: revert;
+.pricebuble {
+    z-index: 100;
+    box-shadow: -4px 4px 5px 0px rgba(0,0,0,0.2);
+    position: absolute;
+    padding: 0px;
+    margin-top: -10px;
+    margin-left: 70px;
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 70px;
+    color: white;
+    font-weight: bold;
+    background: red;
 }
 
-
+.circulo {
+    box-shadow: -4px 4px 5px 0px rgba(0,0,0,0.2);
+    width: 75px;
+    height: 75px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: red;
+    padding-top: 25px;
+    margin-top: -10px;
+    margin-left: 70px;
+    position: absolute;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
