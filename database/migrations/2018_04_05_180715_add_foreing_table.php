@@ -26,6 +26,11 @@ class AddForeingTable extends Migration
             $table->foreign('fk_libros')->references('id')->on('libros');
             $table->foreign('fk_pedidos')->references('id')->on('pedidos');
         });
+
+        Schema::table('generos_libros', function (Blueprint $table) {
+            $table->foreign('fk_genero')->references('id')->on('generos');
+            $table->foreign('fk_libro')->references('id')->on('libros');
+        });
     }
 
     /**

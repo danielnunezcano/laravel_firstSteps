@@ -21,5 +21,11 @@ class LibrosSeeder extends Seeder
         Libro::create(['isbn' => '403518858', 'voto' => '3', 'num_voto' => '92', 'n_pags' => '176', 'precio' => '14.15', 'titulo' => 'Piel de letra', 'editorial' => 'Aguilar', 'atributos_extra' => 'null']);
         Libro::create(['isbn' => '491291602', 'voto' => '5', 'num_voto' => '63', 'n_pags' => '536', 'precio' => '16.06', 'titulo' => 'Seremos recuerdo', 'editorial' => 'Suma', 'atributos_extra' => 'null']);
 
+        Libro::create(['isbn' => '849759379', 'voto' => '5', 'num_voto' => '87', 'n_pags' => '1504', 'precio' => '12.30', 'titulo' => 'It (BEST SELLER)', 'editorial' => 'DEBOLSILLO', 'atributos_extra' => 'null']);
+        Libro::create(['isbn' => '849062766', 'voto' => '5', 'num_voto' => '48', 'n_pags' => '496', 'precio' => '9.45', 'titulo' => 'Mr. Mercedes (Trilogía Bill Hodges 1) (BEST SELLER)', 'editorial' => 'DEBOLSILLO', 'atributos_extra' => 'null']);
+        Libro::create(['isbn' => '849793102', 'voto' => '5', 'num_voto' => '21', 'n_pags' => '528', 'precio' => '9.45', 'titulo' => 'El misterio de Salem\'s Lot: 102 (BEST SELLER)', 'editorial' => 'DEBOLSILLO', 'atributos_extra' => 'null']);
+        Libro::create(['isbn' => '842043199', 'voto' => '5', 'num_voto' => '17', 'n_pags' => '320', 'precio' => '17.95', 'titulo' => 'La llamada de la tribu', 'editorial' => 'ALFAGUARA', 'atributos_extra' => 'null']);
+        Libro::create(['isbn' => '849062592', 'voto' => '5', 'num_voto' => '13', 'n_pags' => '413', 'precio' => '9.45', 'titulo' => 'Travesuras de la niña mala', 'editorial' => 'Debolsillo', 'atributos_extra' => 'null']);
+
     }
 }

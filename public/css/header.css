@@ -1,0 +1,32 @@
+.menu {
+
+}
+
+.menu li{
+    display: inline;
+    padding-left: 30px;
+    float: left;
+    padding-top: 20px;
+}
+
+.inputSearch {
+    float: right;
+}
+
+.headerTitle{
+    float: left;
+}
+
+.textSearch {
+    background: white;
+    color: black;
+    border: black 1px solid;
+    border-radius: 50px;
+    padding: 5px;
+    font-size: 75%;
+    width: 300px;
+}
+
+.search {
+    float: left;
+}

@@ -4,20 +4,15 @@
 @section('content')
 
     @forelse ($libros as $libro)
-        <div class="bookCelda">
-            <div class="pricebuble">
-                {{ $libro->precio }} €
-            </div>
-            <img class="bookImage" src="{{ asset('/images/books/'.$libro->isbn.'.jpg') }}">
-            <div class="bookTitle bookInformation">{{ substr($libro->titulo,0,20) }}</div>
-            <div class="bookAuthor bookInformation">{{ $libro->nombre }}</div>
-
-        </div>
-
-
+        <img class="bookImage" src="{{ asset('/images/books/'.$libro->isbn.'.jpg') }}">
+        {{$libro->titulo}}
     @empty
-        No hay usuarios registados
+        No hay Autores registados
     @endforelse
+
+
+
+
 
 @endsection
 

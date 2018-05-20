@@ -15,48 +15,41 @@
     <!-- Custom styles for this template -->
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <link href="{{ asset('css/lateral.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/header.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/autores.css') }}" rel="stylesheet">
 </head>
 
 <body>
 
 <header>
-    <h1>UAZON</h1>
+    <div class="headerTitle">
+        <h1><a href="{{ asset('/') }}" title="UAZON">UAZON</h1>
+    </div>
     <div class="menu">
         <ul>
-            <li>Libros</li>
-            <li>Autores</li>
-            <li>Lo más leido</li>
-            <li>Críticas de libros</li>
-            <li>Contacto</li>
+            <li><a href="{{ asset('libros') }}" title="Libros">Libros</a></li>
+            <li><a href="{{ asset('autores') }}" title="Autores">Autores</a></li>
+            <li><a href="#" title="Lo más leido">Lo más leido</a></li>
+            <li><a href="#" title="Críticas de libros">Críticas de libros</a></li>
+            <li><a href="#" title="Contacto">Contacto</a></li>
         </ul>
     </div>
-    <div class="col-lg-6">
-        <div class="input-group">
-
-            <input type="text" class="form-control">
-            <span class="glyphicon glyphicon-search"></span>
-                {{--<input type=image src="images/lupa.png" width="25" height="25">--}}
-        <button src="images/lupa.png" type="button"><img src="images/lupa.png" width="25" height="25"></button>
+    <div class="inputSearch">
+        <div class="search">
+            <input type="text" class="textSearch">
         </div>
+        <div class="search">
+            <input type=image src="{{ asset('images/lupa.png') }}" width="20" height="20">
+        </div>
+    </div>
+    <div style="clear:left"></div>
 </header>
 
 <!-- Begin page content -->
 <main role="main" class="mainClass">
 
     <div class="col-2 barraLateral">
-        <h3>Temas</h3>
-        <ul>
-            <li>Romántica</li>
-            <li>Policíaca, negra y suspense</li>
-            <li>Libros para niños</li>
-            <li>Historia</li>
-            <li>Literatura y ficción</li>
-            <li>Libros de texto</li>
-            <li>Consulta</li>
-            <li>Libros juveniles</li>
-            <li>Guías de estudio y repaso</li>
-            <li>Sociedad y ciencias sociales</li>
-        </ul>
+
         @yield('sidebar')
 
     </div>
@@ -78,7 +71,33 @@
 
 <footer class="footer">
     <div class="container">
-        <span class="text-muted">Place sticky footer content here.</span>
+        <p>© Universidad de Alicante 2014</p>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="#" title="Privacidad">Privacidad</a>
+                </li>
+                <li class="separador">·</li>
+                <li>
+                    <a href="#" title="Aviso Legal">Aviso Legal</a>
+                </li>
+                <li class="separador">·</li>
+                <li>
+                    <a href="#contacto" title="Formulario de contacto" rel="ibox">Contacto</a>
+                </li>
+                <li class="separador">·</li>
+                <li>
+                    <a href="#" title="Sitemap">Sitemap</a>
+                </li>
+                <li class="separador">·</li>
+                <li>
+                    <a href="http://proyectos.proweb.ua.es/p18dnc/proyecto/rss" title="RSS">RSS</a>
+                </li>
+            </ul>
+        </nav>
+
+        <p class="madeby">by <a href="http://www.proweb.ua.es" title="Proweb" target="_blank">Proweb</a></p>
     </div>
 </footer>
 

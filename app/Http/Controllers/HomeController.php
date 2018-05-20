@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\DB;
+use App\Classes\DatosBasicos;
 
 class HomeController extends Controller
 {
@@ -24,9 +25,11 @@ class HomeController extends Controller
 
         $title = "UAZON";
 
-        $autores = DB::select('SELECT autores.nombre FROM autores');
+        $package = new DatosBasicos();
+        $autores = $package->getAutores();
+        $generos = $package->getGeneros();
 
-        return view('home.show', ['libros' => $libros, 'autores' => $autores, 'title' => $title]);
+        return view('home.show', ['libros' => $libros, 'autores' => $autores, 'generos' => $generos, 'title' => $title]);
 
     }
 }

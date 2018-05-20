@@ -15,6 +15,10 @@ Route::get('/', 'HomeController@show');
 
 Route::get('/usuarios', 'UserController@index');
 
+Route::get('/autores', 'AutoresController@show');
+
+Route::get('/review/{id}', 'ReviewsController@show');
+
 /*Route::get('/usuarios', function () {
 
 
