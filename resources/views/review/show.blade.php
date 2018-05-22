@@ -4,10 +4,22 @@
 @section('content')
 
     @forelse ($libros as $libro)
-        <img class="bookImage" src="{{ asset('/images/books/'.$libro->isbn.'.jpg') }}">
-        {{$libro->titulo}}
+
+        <div class="portada">
+            <img class="bookImage" src="{{ asset('/images/books/'.$libro->isbn.'.jpg') }}">
+            <div>ISBN: {{$libro->isbn}}</div>
+            <div>Genero: {{$libro->genero}}</div>
+        </div>
+        <div>
+            <h1>{{$libro->titulo}}</h1>
+        </div>
+        <div>
+            {!! nl2br(e($libro->resumen)) !!}
+        </div>
+
+
     @empty
-        No hay Autores registados
+        No exite el libro registados
     @endforelse
 
 
@@ -36,5 +48,6 @@
         @empty
             No hay Autores registados
         @endforelse
+
     </ul>
 @endsection

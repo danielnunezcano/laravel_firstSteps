@@ -17,6 +17,7 @@
     <link href="{{ asset('css/lateral.css') }}" rel="stylesheet">
     <link href="{{ asset('css/header.css') }}" rel="stylesheet">
     <link href="{{ asset('css/autores.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/review.css') }}" rel="stylesheet">
 </head>
 
 <body>
@@ -27,7 +28,7 @@
     </div>
     <div class="menu">
         <ul>
-            <li><a href="{{ asset('libros') }}" title="Libros">Libros</a></li>
+            <li><a href="{{ asset('/') }}" title="Libros">Libros</a></li>
             <li><a href="{{ asset('autores') }}" title="Autores">Autores</a></li>
             <li><a href="#" title="Lo más leido">Lo más leido</a></li>
             <li><a href="#" title="Críticas de libros">Críticas de libros</a></li>
@@ -48,17 +49,21 @@
 <!-- Begin page content -->
 <main role="main" class="mainClass">
 
-    <div class="col-2 barraLateral">
+
+    <div class="barraLateral">
 
         @yield('sidebar')
 
     </div>
 
-    <div >
+
+    <div class="barraderecha">
 
         @yield('content')
 
     </div>
+
+
 
     {{--<div class="col-4">--}}
     {{--@section('sidebar')--}}
@@ -69,6 +74,8 @@
 
 </main>
 
+
+<div style="clear: both;"></div>
 <footer class="footer">
     <div class="container">
         <p>© Universidad de Alicante 2014</p>

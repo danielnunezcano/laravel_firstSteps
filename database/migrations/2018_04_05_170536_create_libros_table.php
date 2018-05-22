@@ -24,6 +24,7 @@ class CreateLibrosTable extends Migration
             $table->string('titulo',90)->nullable(false);
             $table->string('editorial',90)->nullable(false);
             $table->string('atributos_extra')->nullable(false);
+            $table->text('resumen')->nullable(false);
 
             $table->timestamps();
 
