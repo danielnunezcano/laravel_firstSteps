@@ -1,1 +1,1 @@
-.barraLateral {    float: left;    /*height: 1000px;*/}
+.barraLateral {    width: 200px;    float: left;    /*height:50%;*/    position: absolute;}.barraderecha {    margin: auto;    margin-left: 200px;    height: auto;    min-height: 100%;}

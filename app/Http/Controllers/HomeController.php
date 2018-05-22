@@ -12,7 +12,7 @@ class HomeController extends Controller
     public function show()
     {
 
-        $libros = DB::select('SELECT libros.titulo, libros.precio, libros.isbn, autores.nombre
+        $libros = DB::select('SELECT libros.id, libros.titulo, libros.precio, libros.isbn, autores.nombre
                                 FROM libros
                                 INNER JOIN libros_autores
                                 ON libros_autores.fk_libros = libros.id
