@@ -89,7 +89,7 @@ Los lectores opinan...
 «Historia de amor maravillosa, Elísabet lo ha vuelto a conseguir».']);
 
         Libro::create(['isbn' => '849759379', 'voto' => '5', 'num_voto' => '87', 'n_pags' => '1504', 'precio' => '12.30',
-            'titulo' => 'It (BEST SELLER)', 'editorial' => 'DEBOLSILLO', 'atributos_extra' => 'null',
+            'titulo' => 'It', 'editorial' => 'DEBOLSILLO', 'atributos_extra' => 'null',
             'resumen' => '¿Quién o qué mutila y mata a los niños de un pequeño pueblo norteamericano?
 ¿Por qué llega cíclicamente el horror a Derry en forma de un payaso siniestro que va sembrando la destrucción a su paso?
 
@@ -99,7 +99,7 @@ Saben que pueden morir, pero son conscientes de que no conocerán la paz hasta q
 
 It es una de las novelas más ambiciosas de Stephen King, con la que ha logrado perfeccionar de un modo muy personal las claves del género de terror.']);
         Libro::create(['isbn' => '849062766', 'voto' => '5', 'num_voto' => '48', 'n_pags' => '496', 'precio' => '9.45',
-            'titulo' => 'Mr. Mercedes (Trilogía Bill Hodges 1) (BEST SELLER)', 'editorial' => 'DEBOLSILLO', 'atributos_extra' => 'null',
+            'titulo' => 'Mr. Mercedes', 'editorial' => 'DEBOLSILLO', 'atributos_extra' => 'null',
             'resumen' => 'Mr. Mercedes, primera novela de la «Trilogía Bill Hodges», es la historia de una guerra entre el Bien y el Mal. Un retrato inolvidable de la mente de un asesino obsesionado y demente.
 
 Justo antes del amanecer, en una decadente ciudad americana, cientos de parados esperan la apertura de la oficina de empleo para reclamar uno de los mil puestos de trabajo que se han anunciado. Han hecho cola durante toda la noche.
@@ -110,7 +110,7 @@ Meses después, Bill Hodges, un policía jubilado que sigue obsesionado con este
 
 Brady Hartsfield vive con su madre alcohólica en la casa donde nació. Disfrutó tanto de aquella sensación de muerte debajo de los neumáticos del Mercedes que ahora quiere recuperarla.']);
         Libro::create(['isbn' => '849793102', 'voto' => '5', 'num_voto' => '21', 'n_pags' => '528', 'precio' => '9.45',
-            'titulo' => 'El misterio de Salem\'s Lot: 102 (BEST SELLER)', 'editorial' => 'DEBOLSILLO', 'atributos_extra' => 'null',
+            'titulo' => 'El misterio de Salem\'s', 'editorial' => 'DEBOLSILLO', 'atributos_extra' => 'null',
             'resumen' => 'Salem\'s Lot es un pueblo tranquilo donde nunca pasa nada. O quizás esto son solo apariencias, pues lo cierto es que sí se están sucediendo diversos hechos misteriosos, incluso escalofriantes...
 
 Veinte años atrás, por una apuesta infantil, Ben Mears entró en la casa de los Marsten. Y lo que vio entonces aún recorre sus pesadillas. Ahora, como escritor consagrado, vuelve a Salem\'s Lot para exorcizar sus fantasmas.
