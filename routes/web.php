@@ -13,6 +13,12 @@
 
 Route::get('/', 'HomeController@show');
 
+Route::get('/paginados', 'HomeController@actionPaginaDos');
+Route::post('/paginatres', 'HomeController@actionPaginaTres');
+Route::any('/paginacuatro', 'HomeController@actionPaginaCuatro');
+
+Route::any('/home', 'HelloController@home');
+
 Route::get('/usuarios', 'UserController@index');
 
 Route::get('/autores', 'AutoresController@show');
