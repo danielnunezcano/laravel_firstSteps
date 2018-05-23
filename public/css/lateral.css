@@ -1,1 +1,23 @@
-.barraLateral {    width: 200px;    float: left;    /*height:50%;*/    position: absolute;}.barraderecha {    margin: auto;    margin-left: 200px;    height: auto;    min-height: 100%;}
+.barraLateral {
+    position: absolute;
+    padding-left:84px;
+}
+
+.barraderecha {
+    margin-left: 200px;
+    padding-left: 50px;
+}
+
+.barraLateral h3 {
+    color: #009ee3 !important;
+}
+
+.barraLateral li a:hover{
+    background-color: #333333;
+    color: #ffffff;
+ }
+.barraLateral ul{
+    list-style-type: square;
+    text-align: left;
+    color: #94989c;
+ }
