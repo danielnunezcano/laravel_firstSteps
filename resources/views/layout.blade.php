@@ -23,26 +23,41 @@
 <body>
 
 <header>
-    <div class="headerTitle">
-        <h1><a href="{{ asset('/') }}" title="UAZON">UAZON</h1>
+    <div class="headerTitle1">
+        <div class="right_title">
+             <h1><a href="{{ asset('/') }}" title="UAZON">UAZON</h1>
+         </div>
+         <div class="left_buy">
+            <input type=image src="{{ asset('images/carrito.png') }}" width="50" height="50">
+         </div>
     </div>
-    <div class="menu">
-        <ul>
-            <li><a href="{{ asset('/') }}" title="Libros">Libros</a></li>
-            <li><a href="{{ asset('autores') }}" title="Autores">Autores</a></li>
-            <li><a href="#" title="Lo más leido">Lo más leido</a></li>
-            <li><a href="#" title="Críticas de libros">Críticas de libros</a></li>
-            <li><a href="#" title="Contacto">Contacto</a></li>
-        </ul>
-    </div>
-    <div class="inputSearch">
-        <div class="search">
-            <input type="text" class="textSearch">
+
+    <hr style="color: #0056b2;" />
+
+    <div class="headerTitle2">
+        <div class="right_menu">
+            <div class="navbar">
+                <ul>
+                    <li><a href="{{ asset('/') }}" title="Libros">Libros</a></li>
+                    <li><a href="{{ asset('autores') }}" title="Autores">Autores</a></li>
+                    <li><a href="#" title="Lo más leido">Lo más leido</a></li>
+                    <li><a href="#" title="Críticas de libros">Críticas de libros</a></li>
+                    <li><a href="#" title="Contacto">Contacto</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="search">
-            <input type=image src="{{ asset('images/lupa.png') }}" width="20" height="20">
+        <div class="left_inputSearch">
+            <div class="search">
+                <input type="text" class="textSearch"  id="textSearch" placeholder=" Buscar libro por título, autor, ISBN...">
+            </div>
+            <div class="search">
+                <input type=image src="{{ asset('images/lupa.png') }}" width="20" height="20">
+            </div>
         </div>
     </div>
+    
+    <hr style="color: #0056b2;" />
+
     <div style="clear:left"></div>
 </header>
 
