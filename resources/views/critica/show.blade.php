@@ -5,9 +5,10 @@
 
 
             @forelse ($autores as $autor)
-            <div class="autorLibros">
-            <div class="tituloLibros">{{$autor->nombre}}</div>
-            <div>
+            <div class="criticaLayout">
+
+            <div class="criticaimagen">{{$autor->nombre}}</div>
+                <div class="criticaimagenlibro">
                     @forelse ($libros as $libro)
                         @if($libro->autorid == $autor->id)
                         <a href="{{ asset('review/'.$libro->id) }}" title="{{$libro->titulo}}">
@@ -15,14 +16,30 @@
                         </a>
                         @endif
                     @empty
-                        No hay Autores registados
+                        No hay Autores registrados
                     @endforelse
                 </div>
+                <div class="criticaimagendatoslibro">
+                @forelse ($libros as $libro)
+                        @if($libro->autorid == $autor->id)
+                             fk_usuario
+                             critica_calificacion
+                        @endif
+                    @empty
+                        No hay Datos de momento
+                    @endforelse
                 </div>
-            @empty
-                No hay Autores registados
-            @endforelse
+            </div>
 
+            <div class="criticatexto">{{$autor->nombre}}</div>
+                @forelse ($libros as $libro)
+                     @if($libro->autorid == $autor->id)
+                        critica_texto
+                     @endif
+                @empty
+                    No hay críticas de momento
+                @endforelse
+            </div>
 
 @endsection
 

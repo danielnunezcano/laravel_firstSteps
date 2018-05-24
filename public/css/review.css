@@ -27,3 +27,22 @@
     float: right;
     color: #f39c12; /* amarillo (seleccionado) *!*/
 }
+
+/* pantalla detalle libros */
+.bookTitle{
+    font-size: 15px;
+}
+.bookAuthor {
+font-style: italic;
+font-size: 14px;
+color: #666 !important;
+}
+
+/* pantalla detalle autores */
+.tituloLibros{
+    font-size: 14px;
+    color: #666 !important;
+    padding-bottom: 7px;
+    text-align: center;
+    border: outset 8px #eaeaea;
+}
