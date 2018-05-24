@@ -5,17 +5,18 @@ html {
     min-height: 100%;
 }
 body {
-    /* Margin bottom by footer height */
-    margin-bottom: 60px;
+     /*Margin bottom by footer height */
+    margin: 0;
 }
 .footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    /* Set the fixed height of the footer here */
+    margin-top: 0px;
+    padding: 10px 0;
+    background-color: #000;
+    color: #FFF;
+    font-size: 13px;
     height: 60px;
-    line-height: 60px; /* Vertically center the text there */
-    background-color: #f5f5f5;
+    margin: 60px auto 0;
+
 }
 
 
@@ -24,16 +25,40 @@ body {
 /* Not required for template or sticky footer method. */
 
 body > .container {
-    padding: 60px 15px 0;
+    /*padding: 60px 15px 0;*/
+}
+
+.footer {
+    background: black;
+    color: white;
+
 }
 
 .footer > .container {
-    padding-right: 15px;
-    padding-left: 15px;
+    /*padding-right: 15px;*/
+    /*padding-left: 15px;*/
+    background: black;
+}
+
+.container p {
+    float: left;
+}
+
+.container nav{
+    float: left;
+}
+
+.container madeby{
+    margin-left: 200px;
+    float: left;
+}
+
+.container li {
+    display: inline;
 }
 
 .mainClass{
-    padding: 100px 0px;
+    padding: 20px 0px;
 }
 
 code {
@@ -44,7 +69,7 @@ code {
     padding: 30px 30px;
     float: left;
     /*border: 1px solid black;*/
-    min-height: 400px;
+    min-height: 341px;
     /*max-width: 138px;*/
 }
 
@@ -59,6 +84,7 @@ code {
 
 .bookTitle{
     color: black;
+    font-size: 15px;
 }
 
 .bookAuthor{
@@ -66,9 +92,20 @@ code {
     max-width: 138px;
 }
 
-.bookPrice{
-    color: orange;
-    font-style: revert;
+.pricebuble {
+    z-index: 100;
+    box-shadow: -4px 4px 5px 0px rgba(0,0,0,0.2);
+    position: absolute;
+    padding: 0px;
+    margin-top: -10px;
+    margin-left: 80px;
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 70px;
+    color: white;
+    font-weight: bold;
+    background: red;
 }
-
-

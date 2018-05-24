@@ -1,0 +1,29 @@
+.portada {
+    float: left;
+    margin: 20px 20px;
+}
+
+.celdaTable {
+    padding: 10px;
+}
+
+.imageLibroCelda {
+    height: 105px;
+    width: 69px;
+}
+
+.tableLibros{
+    margin: 50px auto;
+    width: 60%;
+    border: 1px solid black;
+}
+
+.filaTable {
+    border: 1px solid black;
+}
+
+.star-rating a{
+    font-size: 40px;
+    float: right;
+    color: #f39c12; /* amarillo (seleccionado) *!*/
+}

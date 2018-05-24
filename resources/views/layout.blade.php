@@ -15,48 +15,70 @@
     <!-- Custom styles for this template -->
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <link href="{{ asset('css/lateral.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/header.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/autores.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/review.css') }}" rel="stylesheet">
 </head>
 
 <body>
 
 <header>
-    <div>UAZON</div>
-    <div class="col-lg-6">
-        <div class="input-group">
+    <div class="headerTitle1">
+        <div class="right_title">
+             <h1><a href="{{ asset('/') }}" title="UAZON">UAZON</h1>
+         </div>
+         <div class="left_buy">
+            <input type=image src="{{ asset('images/carrito.png') }}" width="50" height="50">
+         </div>
+    </div>
 
-            <input type="text" class="form-control">
-            <span class="glyphicon glyphicon-search"></span>
-                {{--<input type=image src="images/lupa.png" width="25" height="25">--}}
-        <button src="images/lupa.png" type="button"><img src="images/lupa.png" width="25" height="25"></button>
+    <hr style="color: #0056b2;" />
+
+    <div class="headerTitle2">
+        <div class="right_menu">
+            <div class="navbar">
+                <ul>
+                    <li><a href="{{ asset('/') }}" title="Libros">Libros</a></li>
+                    <li><a href="{{ asset('autores') }}" title="Autores">Autores</a></li>
+                    <li><a href="#" title="Lo más leido">Lo más leido</a></li>
+                    <li><a href="#" title="Críticas de libros">Críticas de libros</a></li>
+                    <li><a href="#" title="Contacto">Contacto</a></li>
+                </ul>
+            </div>
         </div>
+        <div class="left_inputSearch">
+            <div class="search">
+                <input type="text" class="textSearch"  id="textSearch" placeholder=" Buscar libro por título, autor, ISBN...">
+            </div>
+            <div class="search">
+                <input type=image src="{{ asset('images/lupa.png') }}" width="20" height="20">
+            </div>
+        </div>
+    </div>
+    
+    <hr style="color: #0056b2;" />
+
+    <div style="clear:left"></div>
 </header>
 
 <!-- Begin page content -->
 <main role="main" class="mainClass">
 
-    <div class="col-2 barraLateral">
-        <h3>Temas</h3>
-        <ul>
-            <li>Romántica</li>
-            <li>Policíaca, negra y suspense</li>
-            <li>Libros para niños</li>
-            <li>Historia</li>
-            <li>Literatura y ficción</li>
-            <li>Libros de texto</li>
-            <li>Consulta</li>
-            <li>Libros juveniles</li>
-            <li>Guías de estudio y repaso</li>
-            <li>Sociedad y ciencias sociales</li>
-        </ul>
+
+    <div class="barraLateral">
+
         @yield('sidebar')
 
     </div>
 
-    <div >
+
+    <div class="barraderecha">
 
         @yield('content')
 
     </div>
+
+
 
     {{--<div class="col-4">--}}
     {{--@section('sidebar')--}}
@@ -67,9 +89,37 @@
 
 </main>
 
+
+<div style="clear: both;"></div>
 <footer class="footer">
     <div class="container">
-        <span class="text-muted">Place sticky footer content here.</span>
+        <p>© Universidad de Alicante 2014</p>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="#" title="Privacidad">Privacidad</a>
+                </li>
+                <li class="separador">·</li>
+                <li>
+                    <a href="#" title="Aviso Legal">Aviso Legal</a>
+                </li>
+                <li class="separador">·</li>
+                <li>
+                    <a href="#contacto" title="Formulario de contacto" rel="ibox">Contacto</a>
+                </li>
+                <li class="separador">·</li>
+                <li>
+                    <a href="#" title="Sitemap">Sitemap</a>
+                </li>
+                <li class="separador">·</li>
+                <li>
+                    <a href="http://proyectos.proweb.ua.es/p18dnc/proyecto/rss" title="RSS">RSS</a>
+                </li>
+            </ul>
+        </nav>
+
+        <p class="madeby">by <a href="http://www.proweb.ua.es" title="Proweb" target="_blank">Proweb</a></p>
     </div>
 </footer>
 

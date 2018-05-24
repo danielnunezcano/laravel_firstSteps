@@ -1,0 +1,75 @@
+.navbar li{
+    display: inline;
+   text-align: center;
+   margin: 0 10px 0 0;
+}
+
+.navbar li a {
+    padding: 2px 7px 2px 7px;
+    color: #666;
+    text-decoration: none;
+ }
+.navbar li a:hover{
+    background-color: #333333;
+    color: #ffffff;
+ }
+
+.navbar ul{
+    list-style-type: none;
+    text-align: center;
+ }
+
+.right_title, .right_menu{
+    float: left;
+    padding-left: 10px;
+}
+
+.headerTitle1 a{
+    color: #009ee3 !important;
+}
+.headerTitle1{
+padding-left: 73px;
+}
+
+.left_buy{
+    float: right;
+}
+
+
+.left_inputSearch {
+    float: right;
+    padding-top: 5px;
+}
+
+.headerTitle1, .headerTitle2 {
+    padding-bottom: 50px;
+    padding-top: 10px;
+    padding-right: 73px;
+}
+
+.divline{
+    box-shadow: 5px 5px #b1aeae;
+}
+
+.textSearch {
+    background: white;
+    color: black;
+    border: #b1aeae 1px solid;
+    border-radius: 50px;
+    padding: 5px;
+    padding-left: 18px;
+    font-size: 75%;
+    width: 300px;
+}
+
+.search {
+    float: left;
+    padding-left: 3px;
+}
+
+input::-webkit-input-placeholder {
+    font-style: italic;
+}
+input::-moz-placeholder {
+    font-style: italic;
+}

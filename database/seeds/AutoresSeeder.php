@@ -22,9 +22,6 @@ class AutoresSeeder extends Seeder
             'nombre' => 'Leo Tolstoy'
         ]);
         Autore::create([
-            'nombre' => 'Jorge Bucay'
-        ]);
-        Autore::create([
             'nombre' => 'Charles Dickens'
         ]);
         Autore::create([
