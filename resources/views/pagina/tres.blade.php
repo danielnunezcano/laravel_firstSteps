@@ -2,6 +2,8 @@
 
 
 @section('content')
-    Procesando...
+    {{$name}}<br>
+    {{$email}}<br>
+    {{$password}}<br>
 
 @endsection

@@ -47,12 +47,25 @@
             </div>
         </div>
         <div class="left_inputSearch">
-            <div class="search">
-                <input type="text" class="textSearch"  id="textSearch" placeholder=" Buscar libro por título, autor, ISBN...">
-            </div>
-            <div class="search">
-                <input type=image src="{{ asset('images/lupa.png') }}" width="20" height="20">
-            </div>
+
+
+            <form action="{{ asset('/paginatres') }}" method="post">
+                {!! csrf_field() !!}
+                <div class="search">
+                    <input type="text" class="textSearch"  id="textSearch" placeholder=" Buscar libro por título, autor, ISBN...">
+                </div>
+                <div class="search">
+                    <input type="submit" src="{{ asset('images/lupa.png') }}" width="20" height="20">
+                </div>
+                {{----}}
+                {{----}}
+                {{--<input type="text" id="" name="name">--}}
+                {{--<input type="text" id="" name="email">--}}
+                {{--<input type="password" id="" name="password">--}}
+                {{--<button type="submit">Crear usuario</button>--}}
+            </form>
+
+
         </div>
     </div>
     

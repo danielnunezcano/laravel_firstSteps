@@ -36,22 +36,29 @@ class HomeController extends Controller
 
     }
 
-    public function actionPaginaDos(){
+    public function actionPaginaDos()
+    {
 
 
         $title = "UAZON";
         return view('pagina.dos', ['title' => $title]);
     }
 
-    public function actionPaginaTres(){
+    public function actionPaginaTres()
+    {
 
+        $data = request()->all();
 
+        $name = $data['name'];
+        $email = $data['email'];
+        $password = bcrypt($data['password']);
 
         $title = "UAZON";
-        return view('pagina.tres', ['title' => $title]);
+        return view('pagina.tres', ['title' => $title, 'name' => $name, 'email' => $email, 'password' => $password]);
     }
 
-    public function actionPaginaCuatro(){
+    public function actionPaginaCuatro()
+    {
         $title = "UAZON";
         return view('pagina.cuatro', ['title' => $title]);
     }
