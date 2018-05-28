@@ -22,7 +22,7 @@ class CreateUsuariosTable extends Migration
             $table->string('email',90)->nullable();
 //            $table->string('rol')->nullable();
             $table->enum('rol',['administrador','comprador'])->nullable();
-            $table->string('contrasenya',50)->nullable();
+            $table->string('password',50)->nullable();
             $table->unsignedInteger('fk_ciudades')->nullable();
 
             $table->timestamps();

@@ -19,6 +19,8 @@ Route::get('/autores', 'AutoresController@show');
 
 Route::get('/review/{id}', 'ReviewsController@show');
 
+Route::get('/login', 'LoginController@credentials');
+
 /*Route::get('/usuarios', function () {
 
 
@@ -56,3 +58,7 @@ Route::get('/saludo/{name}/{nickname?}', function ($name, $nickname = null){
 });
 
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

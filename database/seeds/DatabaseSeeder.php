@@ -26,7 +26,6 @@ class DatabaseSeeder extends Seeder
             'usuarios',
             'generos',
             'generos_libros',
-            'critica_libros',
 
         ]);
 
@@ -43,7 +42,6 @@ class DatabaseSeeder extends Seeder
         $this->call(LibrosPedidosSeeder::class);
         $this->call(GenerosSeeder::class);
         $this->call(GenerosLibrosSeeder::class);
-        $this->call(CriticaLibrosSeeder::class);
     }
 
     public function truncateTables(array $tables)

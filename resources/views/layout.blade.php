@@ -53,7 +53,7 @@
             <div class="search">
                 <input type=image src="{{ asset('images/lupa.png') }}" width="20" height="20">
             </div>
-        </div>git
+        </div>
     </div>
     
     <hr style="color: #0056b2;" />
